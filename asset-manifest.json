@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/parak-tv/static/css/main.5a9ea26d.css",
+    "main.js": "/parak-tv/static/js/main.12f5c7f1.js",
+    "index.html": "/parak-tv/index.html",
+    "main.5a9ea26d.css.map": "/parak-tv/static/css/main.5a9ea26d.css.map",
+    "main.12f5c7f1.js.map": "/parak-tv/static/js/main.12f5c7f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a9ea26d.css",
+    "static/js/main.12f5c7f1.js"
+  ]
+}
