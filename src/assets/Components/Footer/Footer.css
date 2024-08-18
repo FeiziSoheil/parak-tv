@@ -1,0 +1,157 @@
+.footer{
+    background-color: #1c1c22;
+    margin-top: 50px;
+    padding: 25px 0;
+}
+.footer__section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 0 ;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer__features{
+    background-color: #23232b;
+    display: flex;
+    align-items: center;
+    flex: 2;
+    gap: 10px;
+    padding: 10px 15px;
+    color: white;
+}
+.footer__social-links{
+    display: flex;
+    flex-direction: column;
+    flex: .5;
+    gap: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.footer__feature-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    padding: 8px 20px;
+}
+.footer__feature-icon {
+    padding: 5px;
+    border-radius: 4px;
+    svg{
+        font-size: 50px;
+    }
+}
+.footer__feature-title{
+    font-size: 18px;
+    opacity: .6;
+}
+.footer__feature-subtitle{
+    font-size: 22px;
+}
+.footer__social-link{
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    transition: box-shadow .4s ease-in-out;
+    svg{
+        font-size: 30px;
+        margin-right: 5px;
+    }
+}
+.instaLink{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+   
+
+}
+.telegramLink{
+    background: linear-gradient(45deg, #2b5876 0%,#4e4376 100%);
+    
+}
+.instaLink:hover{
+    box-shadow: 0 4px 8px rgba(192, 82, 85, 0.5), 
+    0 0px 12px rgba(230, 104, 60, 0.4), 
+    0 0px 16px rgba(220, 39, 67, 0.3);
+    color: white;
+}
+.telegramLink:hover{
+    box-shadow: 0 2px 10px rgba(43, 88, 118, 0.5), 
+    0 0px 15px rgba(78, 67, 118, 0.4);
+    color: white;
+}
+
+.footer__logo{
+    display: flex;
+    align-items: center;
+  img{
+    width: 35px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 8px;
+  }
+  p{
+    font-size: 22px;
+  }
+
+}
+.footer__logo-menu{
+    color: white;
+    display: flex;
+    flex: 2;
+    gap: 35px;
+}
+.footer__download-app{
+    display: flex;
+    flex: .5;
+    gap: 10px;
+    color: white;
+    justify-content: space-between;
+}
+.footer__menu{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin: 0 ;
+    padding: 0;
+    
+}
+.footer__menu-item{
+    opacity: .6;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+.footer__menu-item:hover{
+    opacity: 1;
+}
+.footer__download-icon{
+    color: #86d14e;
+    display: flex;
+    align-items: center;
+    svg{
+        font-size: 25px;
+        margin-right: 5px;
+
+    }
+}
+
+
+.footer__download-button{
+    font-size: 15px;
+    color: #86d14e;
+    background-color:#2c3829 ;
+    border-radius: 4px;
+}
+
+.footer__divider{
+    color: white;
+}

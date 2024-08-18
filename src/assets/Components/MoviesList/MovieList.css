@@ -1,0 +1,42 @@
+.wrapper {
+  margin-top: 85px;
+}
+
+.MovieList__wrapper {
+  background-color: #1c1c22;
+  padding: 50px 0;
+}
+
+.MoviesList_row {
+  margin-bottom: 50px;
+}
+
+.MoviesList_row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.movieList_item {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
+.movieList_item-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movieName {
+  white-space: nowrap;
+  min-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: start;
+  color: white;
+  margin-top: 8px;
+  font-size: 2vw; 
+}

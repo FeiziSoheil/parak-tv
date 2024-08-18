@@ -1,0 +1,186 @@
+.NewMovieList__container{
+    margin-top: 50px;
+}
+.NewMovieList__row{
+    display: flex;
+    gap: 10px;
+}
+.NewMovieList{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex: 2 !important; 
+}
+.newSeriesList{
+    display: flex;
+    flex: .6 !important;
+    height: max-content;
+    flex-direction: column;
+    color: white;
+}
+.NewMovieList__item{
+    display: flex;
+    flex: 1;
+    background-color: #23232b;
+    border-radius: 10px;
+    align-items:center;
+    cursor: pointer;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.NewMovieList__item-img{
+    flex: .7;
+    margin-right: 30px;
+    min-width: 250px;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+.NewMovieList__item-info{
+    flex: 2;
+    color: white;
+}
+.NewMovieList__item-header{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.NewMovieList__episode{
+    font-size: 13px;
+    
+    color: goldenrod;
+}
+.NewMovieList__cast{
+    margin: 10px 0;
+    span{
+        display: flex;
+    }
+}
+.newMovie__actorTitle,
+.newMovie__directorTitle{
+    opacity: .5;
+    margin-right: 5px;
+}
+
+.NewMovieList__description{
+    background-color:#1c1c22 ;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    p{
+        opacity: .6;
+    }
+}
+.NewMovieList__status{
+    display: flex;
+    align-items: center;
+    svg{
+        color:#6898f8 ;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+}
+.NewMovieList__genres{
+    display: flex;
+    gap: 15px;
+    span{
+        display: flex;
+        align-items: center ;
+        font-size: 15px;
+        svg{
+            margin-right: 5px;
+        }
+    }
+}
+.NewMovieList__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.NewMovieList__detail-item{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    span{
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+        opacity: .6;
+        svg{
+            margin-right: 5px;
+            font-size: 19px;
+         
+        }
+    }
+}
+.NewMovieList__btn{
+    font-size: 15px;
+    border-radius: 2px;
+    color: #6898f8 ;
+    background-color: transparent;
+    border: 1px solid #6898f8 ;
+}
+p{
+    margin-bottom: 0 !important;
+}
+.newSeriesList__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.newSeriesList__top-item{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between !important;
+    svg{
+        font-size: 25px;
+        margin-right: 5px;
+    }
+}
+.newSeriesList__wrapper{
+    list-style: none;
+    padding: 0;
+}
+.newSeriesList__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden !important;
+}
+.newSeriesList__item-img{
+    width: 300px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.newSeriesList__item-info{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 100%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+    p{
+        text-align: start;
+    }
+}
+.newSeriesList__title{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #1c1c22;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

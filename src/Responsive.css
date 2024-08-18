@@ -1,0 +1,113 @@
+/* Extra Large Devices (Desktop - Large Monitors) */
+@media (min-width: 1200px) {
+    /* استایل‌ها برای نمایشگرهای بزرگتر از 1200px */
+
+    .movieName {
+        font-size: 1.5vw; /* کاهش اندازه فونت در صفحه‌های کوچکتر از 1200px */
+      }
+}
+
+/* Large Devices (Desktop) */
+@media (min-width: 992px) {
+    /* استایل‌ها برای نمایشگرهای بزرگتر از 992px */
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+    /* استایل‌ها برای نمایشگرهای کوچکتر از 992px */
+
+    .header__movieItem{
+        max-width: 340px !important;
+    }
+    .newSeriesList{
+        display: none;
+    }
+    .NewMovieList__detail-text,
+    .NewMovieList__btn{
+        font-size: 12px;
+    }
+    .NewMovieList__description{
+        margin-bottom: 10px;
+    }
+}
+
+/* Small Devices (Tablets and Large Smartphones) */
+@media (max-width: 768px) {
+    /* استایل‌ها برای نمایشگرهای کوچکتر از 768px */
+    .header__movieItem{
+        max-width: 253px !important;
+    }
+    .NewMovieList__item{
+        padding: 30px 20px;
+    }
+    .NewMovieList__item-img{
+        flex: auto  ;
+        max-height:260px;
+        height: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .NewMovieList__item-info{
+        flex: auto;
+    }
+    .MovieList__wrapper {
+       padding-bottom: 20px;
+    }
+
+    .mainMovie__header-image,
+    .mainMovie__header-info{
+        flex: auto;
+    }
+    .footer__features{
+        flex: auto;
+    }
+    .footer__feature-item{
+        padding: 8px 0;
+        flex-wrap: wrap;
+      
+        svg{
+            font-size: 30px;
+        }
+        .footer__feature-title{
+            font-size: 12px;
+        }
+        .footer__feature-subtitle{
+            font-size: 15px;
+        }
+    }
+
+}
+
+/* Extra Small Devices (Smartphones) */
+@media (max-width: 576px) {
+    /* استایل‌ها برای نمایشگرهای کوچکتر از 576px */
+
+    .header__movieItem{
+        max-width: 500px !important;
+    }
+
+    .movieName {
+        font-size: 5vw;  
+        width: 150px;
+      }
+      .signUp__background,
+      .signUp__wrapper  {
+        display: none;
+      }
+      .signUp__wrapper-active{
+        display: block;
+      }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+    .footer__download-app{
+        flex: auto;
+        justify-content: space-evenly;
+    }
+    .footer__logo-menu{
+        flex: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
