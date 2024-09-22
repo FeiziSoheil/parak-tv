@@ -1,43 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./NewMovieList.css";
+import { Link } from "react-router-dom";
 import GMobiledataIcon from "@mui/icons-material/GMobiledata";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import PublicIcon from "@mui/icons-material/Public";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import StarRateRoundedIcon from "@mui/icons-material/StarRateRounded";
-import { FaHeart } from "react-icons/fa";
-import { FaTheaterMasks } from "react-icons/fa";
+import { FaHeart, FaTheaterMasks } from "react-icons/fa";
 import { RiMovie2Fill } from "react-icons/ri";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
+import "./NewMovieList.css";
 
 export default function NewMovieList() {
-  const [movie, setMovie] = useState([]);
-
-  console.log(movie);
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch(`https://moviesapi.ir/api/v1/movies?page=${8}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setMovie(data.data);
-      })
-      .catch((error) => console.error("Error fetching genres:", error));
+    const fetchMovies = async () => {
+      try {
+        const response = await fetch(`https://moviesapi.ir/api/v1/movies?page=10`);
+        const data = await response.json();
+        setMovies(data.data);
+      } catch (error) {
+        console.error("Error fetching movies:", error);
+      }
+    };
+
+    fetchMovies();
   }, []);
+
+  const renderMovieGenres = (genres) => {
+    return genres.join(", ");
+  };
 
   return (
     <div className="NewMovieList__container">
       <Container>
         <Row className="NewMovieList__row">
           <Col className="NewMovieList">
-            {movie.map((movie) => (
-
-              <div className="NewMovieList__item">
+            {movies.map((movie) => (
+              <div key={movie.id} className="NewMovieList__item">
                 <div className="NewMovieList__item-img">
                   <Link to={`/movie/${movie.id}`}>
-                    <img src={movie.poster} alt="" />
+                    <img src={movie.poster} alt={movie.title} />
                   </Link>
                 </div>
                 <div className="NewMovieList__item-info">
@@ -52,7 +55,7 @@ export default function NewMovieList() {
                       <span className="NewMovieList__genre-item">
                         <FaTheaterMasks className="NewMovieList__icon" />
                         <p className="NewMovieList__genre-text">
-                          {movie.genres.map((gener) => gener).join(", ")}
+                          {renderMovieGenres(movie.genres)}
                         </p>
                       </span>
                       <span className="NewMovieList__like">
@@ -62,17 +65,13 @@ export default function NewMovieList() {
                     </div>
                   </div>
                   <div className="NewMovieList__cast">
-                    <span >
+                    <span>
                       <p className="newMovie__actorTitle">Actors :</p>
-                      <p className="NewMovieList__actors">
-                        Harry, Vikings
-                      </p>
+                      <p className="NewMovieList__actors">Harry, Vikings</p>
                     </span>
                     <span>
                       <p className="newMovie__directorTitle">Directors :</p>
-                      <p className="NewMovieList__directors">
-                        Vikings
-                      </p>
+                      <p className="NewMovieList__directors">Vikings</p>
                     </span>
                   </div>
                   <hr />
@@ -113,25 +112,23 @@ export default function NewMovieList() {
             <h2 className="newSeriesList__title">Updated</h2>
             <div className="newSeriesList__top">
               <span className="newSeriesList__top-item">
-              <RiMovie2Fill/>
+                <RiMovie2Fill />
                 <p>Series</p>
               </span>
               <p>View all</p>
             </div>
             <ul className="newSeriesList__wrapper">
-              {movie.map((movie) => (
-                <li className="newSeriesList__item">
+              {movies.map((movie) => (
+                <li key={movie.id} className="newSeriesList__item">
                   <Link to={`/movie/${movie.id}`}>
-                    <img className="newSeriesList__item-img"  src={movie.poster} alt="" />
+                    <img className="newSeriesList__item-img" src={movie.poster} alt={movie.title} />
                     <div className="newSeriesList__item-info">
-                      <p className="newSeries__title ">{movie.title}</p>
-                      <p className="newSeriesList__episode">
-                        Season 3 Episode 1
-                      </p>
+                      <p className="newSeries__title">{movie.title}</p>
+                      <p className="newSeries__geners">{renderMovieGenres(movie.genres)}</p>
                     </div>
                   </Link>
                 </li>
-                  ))}
+              ))}
             </ul>
           </Col>
         </Row>

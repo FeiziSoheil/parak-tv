@@ -9,7 +9,7 @@
     align-items: center;
     padding: 30px 0 ;
     color: white;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
 }
 
 .footer__features{
@@ -24,7 +24,7 @@
 .footer__social-links{
     display: flex;
     flex-direction: column;
-    flex: .5;
+    /* flex: .5; */
     gap: 10px;
     cursor: pointer;
     list-style: none;
@@ -41,6 +41,7 @@
 .footer__feature-icon {
     padding: 5px;
     border-radius: 4px;
+    flex-wrap:nowrap !important; ;
     svg{
         font-size: 50px;
     }
@@ -115,6 +116,7 @@
     gap: 10px;
     color: white;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer__menu{
     display: flex;

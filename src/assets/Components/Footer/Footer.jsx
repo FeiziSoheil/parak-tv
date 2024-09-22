@@ -80,7 +80,7 @@ export default function Footer() {
           <div class="footer__logo-menu">
             <div class="footer__logo">
               <img src='/logo.png'alt="Uptv Logo" />
-              <p>Uptv</p>
+              <p>Parak</p>
             </div>
             <ul class="footer__menu">
               <li class="footer__menu-item">Download Movie</li>
@@ -96,7 +96,7 @@ export default function Footer() {
           <div class="footer__download-app">
             <div class="footer__download-icon">
               <FaDownload />
-              <p>Uptv App</p>
+              <p>Parak App</p>
             </div>
             <button class="footer__download-button">Download</button>
           </div>

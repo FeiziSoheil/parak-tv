@@ -26,9 +26,23 @@
     .NewMovieList__btn{
         font-size: 12px;
     }
+    .footer__features{
+        flex-grow: 2;
+    }
     .NewMovieList__description{
         margin-bottom: 10px;
     }
+
+    .footer__feature-item{
+        padding: 8px 1px;
+        svg{
+            font-size: 25px;
+        }
+    }
+    .footer__feature-subtitle{
+        font-size: 15px;
+    }
+   
 }
 
 /* Small Devices (Tablets and Large Smartphones) */
@@ -71,9 +85,13 @@
         .footer__feature-title{
             font-size: 12px;
         }
-        .footer__feature-subtitle{
-            font-size: 15px;
+        .footer__features{
+            flex: 1;
         }
+        .footer__social-links{
+            flex: auto;
+        }
+       
     }
 
 }

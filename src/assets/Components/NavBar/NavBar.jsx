@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown, Form } from 'react-bootstrap';
 import { IoSearch } from "react-icons/io5";
 import { Link } from 'react-router-dom'; // Ensure you have react-router-dom installed
+
 import './NavBar.css';
 
 function NavBar() {
@@ -34,9 +35,10 @@ function NavBar() {
         <>
             <Navbar collapseOnSelect expand="lg" className="navbar-wrapper">
                 <Container className="navbar-container">
-                    <Navbar.Brand href="/">
-                        <img src="logo.png" alt="Logo" className='navbar-logo' />
-                       <p>Uptv</p>
+                    <Navbar.Brand href="">
+                        <Link to='/'>
+                        Parak Tv
+                        </Link>
                     </Navbar.Brand>
                     <div className="menu-wrapper">
                         <IoSearch className="mobile-search-icon" onClick={handleSearchIconClick} />
@@ -45,7 +47,7 @@ function NavBar() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto nav-items">
                             <Nav.Link href="#home">Irani film</Nav.Link>
-                            <NavDropdown title="Foreign film" id="foreign-film-dropdown">
+                            <NavDropdown  avDropdown title="Foreign film" id="foreign-film-dropdown">
                                 {['Action', 'Drama', 'India', 'Romantic'].map((genre, index) => (
                                     <NavDropdown.Item key={index} href={`#action/${index + 1}`}>{genre}</NavDropdown.Item>
                                 ))}

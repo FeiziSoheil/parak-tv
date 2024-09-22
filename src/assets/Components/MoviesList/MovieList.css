@@ -22,6 +22,7 @@
 .movieList_item {
   flex: 0 0 auto;
   margin: 0 10px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .movieList_item-img {

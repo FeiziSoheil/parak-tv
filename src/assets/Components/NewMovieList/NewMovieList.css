@@ -123,6 +123,11 @@
     color: #6898f8 ;
     background-color: transparent;
     border: 1px solid #6898f8 ;
+    transition: all 0.3s ease-in-out;
+}
+.NewMovieList__btn:hover{
+    background-color: #6898f8;
+    color: white;
 }
 p{
     margin-bottom: 0 !important;
@@ -183,4 +188,16 @@ p{
     background-color: #1c1c22;
     margin-bottom: 20px;
     border-radius: 5px;
+   
+}
+.newSeries__title{
+    white-space: nowrap;
+    min-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+}
+.newSeries__geners{
+    opacity: 0.8;
+    font-size: 13px;
 }
