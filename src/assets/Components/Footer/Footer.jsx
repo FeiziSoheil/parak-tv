@@ -78,10 +78,7 @@ export default function Footer() {
 
         <div class="footer__section footer__section--menu">
           <div class="footer__logo-menu">
-            <div class="footer__logo">
-              <img src='/logo.png'alt="Uptv Logo" />
-              <p>Parak</p>
-            </div>
+              <p className="footer-logo">Parak Tv</p>
             <ul class="footer__menu">
               <li class="footer__menu-item">Download Movie</li>
               <li class="footer__menu-item">Download Series</li>

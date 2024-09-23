@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import { useParams } from 'react-router-dom';
+import { useParams ,Link} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ThumbsUpDownIcon from '@mui/icons-material/ThumbsUpDown';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
@@ -19,6 +19,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import './MainMovie.css'
+
 
 export default function MainMovie() {
     const { mainMovieID } = useParams();
@@ -169,6 +170,7 @@ export default function MainMovie() {
                         >
                             {similerMovieData.map((movie) => (
                                 <SwiperSlide key={movie.id}>
+                                   <Link to={`/movie/${movie.id}`}>
                                     <li className="movieList_item">
                                         <img
                                             className="movieList_item-img"
@@ -181,6 +183,7 @@ export default function MainMovie() {
                                             <p className="movieRate">{movie.imdb_rating}</p>
                                         </span>
                                     </li>
+                                    </Link>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -200,7 +203,7 @@ export default function MainMovie() {
                                 <div className="mainMovie__comments-writerInfo">
                                     <img
                                         className="mainMovie__comments-writerImg"
-                                        src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                        src="person.jpg"
                                         alt="user"
                                     />
                                     <p className="mainMovie__comments-writerName">User</p>
@@ -212,7 +215,7 @@ export default function MainMovie() {
                                 <div className="mainMovie__comments-writerInfo">
                                     <img
                                         className="mainMovie__comments-writerImg"
-                                        src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                        src='/person.webp'
                                         alt="user"
                                     />
                                     <p className="mainMovie__comments-writerName">User</p>
@@ -224,7 +227,7 @@ export default function MainMovie() {
                                 <div className="mainMovie__comments-writerInfo">
                                     <img
                                         className="mainMovie__comments-writerImg"
-                                        src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                        src='/person.webp'
                                         alt="user"
                                     />
                                     <p className="mainMovie__comments-writerName">User</p>
@@ -236,7 +239,7 @@ export default function MainMovie() {
                                 <div className="mainMovie__comments-writerInfo">
                                     <img
                                         className="mainMovie__comments-writerImg"
-                                        src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                        src='/person.webp'
                                         alt="user"
                                     />
                                     <p className="mainMovie__comments-writerName">User</p>

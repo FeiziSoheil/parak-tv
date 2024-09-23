@@ -21,6 +21,11 @@
     padding: 10px 15px;
     color: white;
 }
+.footer-logo{
+    font-size: 22px;
+    max-width: 80px;
+    width: 100%;
+}
 .footer__social-links{
     display: flex;
     flex-direction: column;
