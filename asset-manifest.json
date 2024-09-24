@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/parak-tv/static/css/main.0b6ec93f.css",
+    "main.css": "/parak-tv/static/css/main.007e278c.css",
     "main.js": "/parak-tv/static/js/main.7e4477b5.js",
     "index.html": "/parak-tv/index.html",
-    "main.0b6ec93f.css.map": "/parak-tv/static/css/main.0b6ec93f.css.map",
+    "main.007e278c.css.map": "/parak-tv/static/css/main.007e278c.css.map",
     "main.7e4477b5.js.map": "/parak-tv/static/js/main.7e4477b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b6ec93f.css",
+    "static/css/main.007e278c.css",
     "static/js/main.7e4477b5.js"
   ]
 }
