@@ -62,20 +62,20 @@
 .mainMovie__rating-info{
     margin: 20px 0;
 }
-.mainMovie__rating-container{
-    margin-bottom: 8px;
-}
+
 .mainMovie__rating-container{
     display: flex;
     align-items: center;
     gap: 10px;
-    span{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        svg{
-            font-size: 25px;
-        }
+    margin-bottom: 8px;
+
+}
+.mainMovie__rating-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    svg{
+        font-size: 25px;
     }
 }
 .mainMovie__actors_directors{
